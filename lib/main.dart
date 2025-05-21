@@ -1,13 +1,24 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_woo_2025/pages/align_page.dart';
 import 'package:flutter_woo_2025/pages/box_page.dart';
+import 'package:flutter_woo_2025/pages/button_page.dart';
 import 'package:flutter_woo_2025/pages/container_page.dart';
+import 'package:flutter_woo_2025/pages/detail_page.dart';
 import 'package:flutter_woo_2025/pages/flex_page.dart';
+import 'package:flutter_woo_2025/pages/gesture_page.dart';
+import 'package:flutter_woo_2025/pages/icons_page.dart';
+import 'package:flutter_woo_2025/pages/image_page.dart';
+import 'package:flutter_woo_2025/pages/input_page.dart';
+import 'package:flutter_woo_2025/pages/nav_page.dart';
 import 'package:flutter_woo_2025/pages/row_column.dart';
+import 'package:flutter_woo_2025/pages/splash_page.dart';
 import 'package:flutter_woo_2025/pages/stack_page.dart';
+import 'package:flutter_woo_2025/pages/theme_page.dart';
 import 'package:flutter_woo_2025/pages/wrap_page.dart';
+import 'package:flutter_woo_2025/service/http.dart';
 
 void main() {
+  HttpService().init();
   runApp(const MyApp());
 }
 class MyApp extends StatelessWidget {
@@ -19,9 +30,14 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       title: 'Flutter Demo',
       theme: ThemeData(
-        colorScheme: ColorScheme.fromSeed(seedColor: Colors.deepPurple),
+        colorScheme: ColorScheme.fromSeed(seedColor: Colors.blue),
         useMaterial3: true,
       ),
+      // initialRoute: '/home',
+      // routes: {
+      //   '/home': (context) => NavPage(),
+      //   '/detail': (context) => DetailPage()
+      // },
       home: ScaffoldPage(),
     );
   }
@@ -38,7 +54,7 @@ class ScaffoldPage extends StatelessWidget {
       ),
 
       // 正文
-      body: AlignPage()
+      body: ButtonPage()
     );
   }
 }
