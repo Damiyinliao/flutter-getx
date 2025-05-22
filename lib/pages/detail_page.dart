@@ -4,7 +4,6 @@ import 'package:flutter_woo_2025/pages/image_page.dart';
 class DetailPage extends StatelessWidget {
    // 参数
   final String? title;
-
   const DetailPage({super.key, this.title});
 
   @override
