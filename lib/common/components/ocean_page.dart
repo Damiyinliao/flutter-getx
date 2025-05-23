@@ -13,11 +13,18 @@ class OceanPage extends StatelessWidget {
       backgroundColor: Color(0xFFFDFBF3),
       body: Stack(
         children: [
-          Positioned.fill(
-            child: Opacity(opacity: 0.2, child: Image.asset(
-              AssetsImages.oceanPageBg,
-              fit: BoxFit.cover,
-            ))
+          Positioned(
+            top: 0,
+            left: 0,
+            right: 0,
+            height: 200,
+            child: Opacity(
+              opacity: 0.3,
+              child: Image.asset(
+                AssetsImages.oceanPageBg,
+                fit: BoxFit.cover,
+              )
+            )
           ),
           // 内容区域
           SafeArea(

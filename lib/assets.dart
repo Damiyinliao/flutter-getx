@@ -2,6 +2,9 @@
 class AssetsImages {
   static const logoPng = '/images/logo.png';
   static const langhuaPng = '/images/new-langhua-coin.png';
+  static const siginPng = '/images/action-signin.png';
+  static const workbenchPng = '/images/action-workbench.png';
+  static const storePosterJpg = '/images/store-poster.jpg';
   static const vipSvg = '/svg/v.svg';
   static const companyInfoBgPng = '/images/company-info-bg.png';
   static const oceanPageBg = '/images/landscape-cut.png';

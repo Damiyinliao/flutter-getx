@@ -1,0 +1,1 @@
+String picUrlPrefix = 'https://whwebasset.oss-cn-hangzhou.aliyuncs.com/island-miniprogram/';

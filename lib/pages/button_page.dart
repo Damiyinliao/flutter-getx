@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:flutter_woo_2025/service/http.dart';
+import 'package:flutter_woo_2025/common/services/http.dart';
 
 class ButtonPage extends StatelessWidget {
   const ButtonPage({super.key});
@@ -18,9 +18,9 @@ class ButtonPage extends StatelessWidget {
             )
           ),
           TextButton(onPressed: (){
-            HttpService().get('/app-api/product/spu/page?pageNo=1&pageSize=10&status=1').then((res) => {
-              print(res)
-            });
+            // HttpService().get('/app-api/product/spu/page?pageNo=1&pageSize=10&status=1').then((res) => {
+            //   print(res)
+            // });
           }, child: Text('哈哈哈哈'))
         ]
       )
